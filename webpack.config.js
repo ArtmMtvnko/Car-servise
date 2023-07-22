@@ -13,12 +13,18 @@ module.exports = {
         clean: true
     },
     devServer: {
-        port: 4200
+        static: {
+            directory: path.resolve(__dirname, 'dist/index.html')
+        },
+        port: 8080,
+        open: true,
+        hot: true,
+        compress: true
     },
     plugins: [
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, 'src/index.html'),
-            filename: '[name][contenthash].html',
+            filename: 'index.html',
             inject: 'body'
         }),
         new MiniCssExtractPlugin({
