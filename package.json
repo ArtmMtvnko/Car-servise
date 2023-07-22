@@ -1,0 +1,35 @@
+{
+  "name": "admin-dashboard",
+  "version": "1.0.0",
+  "description": "grid layout traning by the odin project",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "start": "webpack serve --mode development --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArtmMtvnko/Admin-Dashboard.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "js",
+    "javascript",
+    "webpack",
+    "grid"
+  ],
+  "author": "Artem Matviienko <artemm3note@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArtmMtvnko/Admin-Dashboard/issues"
+  },
+  "homepage": "https://github.com/ArtmMtvnko/Admin-Dashboard#readme",
+  "devDependencies": {
+    "html-webpack-plugin": "^5.5.3",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  }
+}
