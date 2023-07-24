@@ -28,6 +28,7 @@
   "homepage": "https://github.com/ArtmMtvnko/Admin-Dashboard#readme",
   "devDependencies": {
     "css-loader": "^6.8.1",
+    "html-loader": "^4.2.0",
     "html-webpack-plugin": "^5.5.3",
     "mini-css-extract-plugin": "^2.7.6",
     "sass": "^1.64.1",

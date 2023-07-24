@@ -22,9 +22,11 @@
     padding: 50px 0;
     border-bottom: 1px solid #282828;
 
-    &>:nth-child(1),
-    &>:nth-child(2) {
+    &>:nth-child(1) {
         justify-self: start;
+    }
+    &>:nth-child(2) {
+        justify-self: end;
     }
 
     .header__logo-button {
@@ -120,6 +122,10 @@
 
         &:nth-child(2) {
             border: 2px solid #4e4e4e;
+        }
+
+        img {
+           transform: translate(-2px, -2px);
         }
     }
 }
