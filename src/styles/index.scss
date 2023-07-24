@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;700&display=swap');
 @import "./null-styles.scss";
 @import "./header.scss";
+@import "./main.scss";
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -13,7 +14,7 @@ body {
 
 .container {
     display: grid;
-    grid-template: repeat(3, 1fr) / 1fr;
+    grid-template: auto 1fr minmax(100px, auto) / 1fr;
     
     grid-column: 2 / 3;
 

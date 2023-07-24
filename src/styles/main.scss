@@ -1,0 +1,41 @@
+main {
+    margin: 2% 0 0 0;
+}
+
+.main__cards {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+    gap: 15px;
+
+    .main__card {
+        display: grid;
+        grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+
+        border-radius: 32px;
+        background-color: #1e1e1e;
+
+        &:nth-child(5) {
+            background-color: #ff001d;
+        }
+
+        .card__title,
+        .card__prise {
+            align-self: center;
+
+            margin: 0 0 0 40px;
+
+            font-size: 24px;
+            color: #fff;
+
+            span {
+                font-size: 16px;
+            }
+        }
+
+        img {
+            grid-area: 1 / 2 / 3 / 3;
+            align-self: end;
+        }
+
+    }
+}
