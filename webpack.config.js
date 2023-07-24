@@ -13,9 +13,9 @@ module.exports = {
         clean: true
     },
     devServer: {
-        static: {
-            directory: path.resolve(__dirname, 'dist/index.html')
-        },
+        // static: {`
+        //     directory: path.resolve(__dirname, 'dist/index.html')
+        // },`
         port: 8080,
         open: true,
         hot: true,
@@ -35,15 +35,17 @@ module.exports = {
         rules: [
             {
                 test: /\.css$/,
-                use: [MiniCssExtractPlugin.loader, 'css-loader']
+                // use: [MiniCssExtractPlugin.loader, 'css-loader']
+                use: ['style-loader', 'css-loader']
             },
             {
                 test: /\.s[ac]ss$/,
-                use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
+                // use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
+                use: ['style-loader', 'css-loader', 'sass-loader']
             },
             {
                 test: /\.(png|svg|jpg|jpeg|gif)$/,
-                type: 'asset/resourse'
+                type: 'asset/resource'
             }
         ]
     }
