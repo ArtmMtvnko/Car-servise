@@ -10,6 +10,13 @@
 
         border-radius: 32px;
         background-color: #1e1e1e;
+        cursor: pointer;
+        transition: 0.3s;
+
+        &:hover {
+            box-shadow: 0 0 10px #fff;
+            transform: scale(1.02);
+        }
 
         &:nth-child(5) {
             background-color: #ff001d;
@@ -33,7 +40,6 @@
             grid-area: 1 / 2 / 3 / 3;
             align-self: end;
         }
-
     }
 }
 
@@ -42,6 +48,7 @@
     grid-template: auto 1fr auto / 1fr 1fr;
 
     padding: 80px;
+    margin: 20px 0;
 
     background-color: #fff;
     border-radius: 32px;
@@ -71,6 +78,7 @@
             height: fit-content;
             padding: 20px;
             border-radius: 14px;
+            cursor: pointer;
 
             &::before {
                 content: "";
@@ -94,7 +102,7 @@
         }
         .favorite__right {
             background-color: #ff001d;
-            // border: none;
+            margin: 0 0 0 20px;
 
             &::before {
                 transform: translateY(-3px) rotate(45deg);
@@ -122,14 +130,19 @@
         .favorite__card {
             display: grid;
             grid-template: auto 1fr auto / 1fr;
-
+            
+            img {
+                cursor: pointer;
+            }
+            
             .favorite__card-title {
                 margin: 20px 0;
                 line-height: 1.5rem;
             }
-
+            
             .favorite__card-more {
                 font-size: 14px;
+                cursor: pointer;
 
                 span {
                     display: inline-block;
@@ -146,9 +159,9 @@
     grid-template: 1fr / repeat(4, 1fr);
     gap: 16px;
 
-    background-color: #f5f5f5;
-
     padding: 40px;
+
+    background-color: #f5f5f5;
     border-radius: 32px;
 
     .social-links__title {
@@ -167,6 +180,12 @@
         padding: 24px 48px;
         border-radius: 16px;
         background-color: #ffffff;
+        cursor: pointer;
+        transition: 0.2s;
+
+        &:hover {
+            box-shadow: 0 0 10px #6e6e6e7a;
+        }
 
         img {
             width: 1.6rem;
@@ -175,5 +194,6 @@
         p {
             margin: 0 10px;
         }
+
     }
 }

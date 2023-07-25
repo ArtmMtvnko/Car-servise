@@ -2,12 +2,15 @@
 @import "./null-styles.scss";
 @import "./header.scss";
 @import "./main.scss";
+@import "./footer.scss";
+@import "./scrolle-bar.scss";
 
 body {
     font-family: 'Poppins', sans-serif;
 }
 
 .wrapper {
+    background-image: linear-gradient(30deg, #000, #4c4c4c);
     display: grid;
     grid-template: 1fr / 1fr minmax(auto, 1440px) 1fr;
 }
